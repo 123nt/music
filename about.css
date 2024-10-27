@@ -544,3 +544,14 @@ h3 {
     height: 80%;
   }
 }
+
+@media screen and (max-width: 561px) {
+  .body {
+    margin-top: 5%;
+    width: 290px;
+    height: 480px;
+  }
+  .footer {
+    margin-top: 100%;
+  }
+}
