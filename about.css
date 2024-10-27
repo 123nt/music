@@ -545,8 +545,8 @@ h3 {
 @media screen and (max-width: 561px) {
   .body {
     margin-top: 5%;
-    width: 290px;
-    height: 480px;
-    font-size: 20;
+    width: 420pxx;
+    height: 500px;
+    font-size: 25px;
   }
 }
