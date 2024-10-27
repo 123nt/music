@@ -1,17 +1,20 @@
 .word-container {
   display: flex;
   gap: 10px; /* Space between words */
-  
+  font-family: ms ui gothic, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  color: #443737;
 }
-
+a:hover {
+  color: #744f4f;
+}
 .word {
   padding: 10px;
   background-color: #f0f0f0;
   border-radius: 5px;
-  text-align: center; 
-  min-width: 60px; 
+  text-align: center;
+  min-width: 60px;
 }
-  
 
 html {
   scroll-behavior: smooth;
@@ -62,8 +65,8 @@ blockquote {
 }
 
 .counter {
-   border-radius: 10px;
-  border: solid 1px #ccc7c7; 
+  border-radius: 10px;
+  border: solid 1px #ccc7c7;
   width: 100px;
   padding-top: 2px;
   margin: auto;
@@ -98,17 +101,17 @@ blockquote {
 } */
 
 .scrolltextcontainer {
-  overflow: hidden;
   background-color: #ece6ce5f;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   padding: 10px;
   border: 1px solid #ccc7c7;
   border-radius: 5px;
   overflow: hidden;
 }
-.scrolltext {*/
+ .scrolltext {
+
 /* -moz-transform: translateX(100%);*/
 /*  -webkit-transform: translateX(100%);*/
 /*  transform: translateX(100%);*/
@@ -299,8 +302,6 @@ ul {
 
 /* SPECIALIZED FONT */
 
-
-
 .diarydate {
   background-color: #ccc7c78a;
   width: 75%;
@@ -387,8 +388,6 @@ h3 {
 .header {
   padding-top: 50px;
 }
-
-
 
 .changelog {
   border: solid 1px #ccc7c7;
@@ -496,7 +495,7 @@ h3 {
     overflow: auto;
     margin-left: 5px;
     margin-right: 5px;
-     margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .aboutmain {
@@ -519,13 +518,12 @@ h3 {
     height: 80%;
   }
 }
-@media screen and (max-width: 561px)
- {
+@media screen and (max-width: 561px) {
   .body {
     margin-top: 5%;
     width: 420px;
     height: 360px;
-    font-size: 40px;
+    font-size: 20px;
   }
   img {
     width: 100%;
