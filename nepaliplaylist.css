@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|PT+Sans");
+
+body {
+  margin: 7px;
+  font-family: "Crimson Text", "Minion Pro", "Times New Roman", serif;
+  /*background-color: #e2e2e2;*/
+  /*color: #605f5e;*/
+}
+
+h1.song {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: 600;
+  color: #302f2f;
+}
+
+h1 .title {
+  color: #247ba0;
+}
+
+.settings > li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 50px;
+  color: #555753;
+}
+.hide {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.chorus .emph {
+  font-style: normal;
+}
+
+#songblock:not(.toc) {
+  /*     border: dashed 1px; */
+
+  margin-top: 20px;
+  margin-left: 0px;
+  font-size: 18px;
+}
+
+#songblock:not(.toc) > div.medleyheader {
+  color: #0a2463;
+  font-weight: bold;
+  font-family: "PT Sans", sans;
+  flex: 0 0 100%;
+  page-break-after: avoid;
+  break-after: avoid;
+  /*page-break-before: always;*/
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.lines .looseline:first-child {
+  margin-top: 30px;
+}
+
+.looseline {
+  max-width: 500px;
+}
+
+.imgdiv {
+  max-width: 200px;
+  overflow: scroll;
+}
+
+(#songblock > div.medleyheader) + (#songblock > div:not(.medleyheader)) {
+  border-width: 20px;
+}
+
+#songblock > div:not(.medleyheader) {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  color: #302f2f !important;
+}
+
+#songblock > div:not(.medleyheader):first-child {
+  margin-top: 0px;
+}
+
+.blockname {
+  font-size: 70%;
+  /*     color: white; */
+  border: solid 1px rgb(200, 200, 200);
+  border-top: none;
+  border-left: none;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  padding: 4px 5px 4px 15px;
+  margin-top: 30px;
+  margin-left: -15px;
+  margin-right: 10px;
+  border-radius: 0px 0px 5px 0px;
+  box-shadow: 4px 4px 4px rgb(230, 230, 230);
+  text-align: right;
+}
+
+.blockname.intro {
+  margin-top: 0px;
+}
+
+.prepadding {
+  min-width: 50px;
+}
+
+.lines {
+  border-left: solid 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  -webkit-border-image: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(lightgrey),
+      to(rgba(0, 0, 0, 0))
+    )
+    1 100%;
+  -webkit-border-image: -webkit-linear-gradient(lightgrey, rgba(0, 0, 0, 0)) 1
+    100%;
+  -moz-border-image: -moz-linear-gradient(lightgrey, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(lightgrey, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, lightgrey, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+table.chordtable {
+  font-size: 18px;
+}
+
+table.verseline {
+  font-size: 18px;
+  padding: 0px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table.verseline td {
+  padding: 0px;
+  white-space: nowrap;
+  vertical-align: top;
+  text-align: right;
+}
+
+td.chord {
+  text-align: center;
+  vertical-align: bottom !important;
+  text-align: center !important;
+}
+
+.chord {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  color: #0a2463;
+  font-size: 80%;
+  font-style: normal !important;
+}
+
+.alwupr {
+  font-style: normal !important;
+  color: black !important;
+}
+
+table.verseline > tbody > tr:first-child {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+/* .lines:first-child .looseline {
+    margin-top: 50px
+} */
+
+/* Verse types */
+
+.verse {
+}
+
+.info {
+  max-width: 500px;
+}
+.comment {
+  max-width: 500px;
+}
+
+.note {
+  font-style: italic;
+  font-size: 90%;
+  color: #247ba0;
+  margin-left: 8px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-left: solid 1px #247ba0;
+  border-right: solid 1px #247ba0;
+}
+
+.verseref {
+  font-size: 70%;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  color: #0a2463;
+}
+
+.chorus td {
+  font-style: italic;
+}
+
+/* search */
+#searchblock {
+  position: relative;
+}
+
+#searchout {
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  display: none;
+  padding: 20px;
+  border: solid 1px;
+  margin-top: 0px;
+}
+
+#searchout li:first-of-type {
+  background-color: white;
+}
+
+#searchfield {
+  background-color: white;
+  border: solid 1px;
+  display: none;
+}
+
+.searchresult {
+}
+
+.info .lines {
+  padding-top: 30px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* media */
+
+@media screen and (max-device-width: 900px) {
+  #songblock:not(.toc) {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform-origin: top left;
+  }
+  #searchfield {
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 3px;
+    margin: 2px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+  }
+
+  #searchfield:not(:focus) {
+    border-color: lightgrey;
+    width: 50%;
+  }
+  #searchfield:focus {
+    border-color: black;
+    box-shadow: 5px 5px 10px;
+  }
+  #searchbutton {
+    display: none;
+  }
+
+  #searchout {
+    box-shadow: 5px 5px 10px;
+    border-radius: 3px;
+    /*width: 100%;*/
+    margin: 2px;
+  }
+
+  .button {
+    background-color: #247ba0;
+    border: 2px solid #247ba0;
+    padding: 10px 5px;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 3px;
+    min-width: 75px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    background-color: #82c6e3;
+  }
+
+  .button.vague {
+    background-color: white;
+    color: #247ba0;
+    border-color: #82c6e3;
+  }
+
+  .vague:hover {
+    border-color: #247ba0 !important;
+  }
+}
+
+/* @media screen and (min-device-width: 361px) and (max-device-width: 900px) {
+    body{
+        font-size: 80%;
+        background-color: lightgreen;
+    }
+    table.verseline {
+        font-size: 80%;
+    }
+    table.chordtable {
+        font-size: 80%;
+    }
+    #songblock {
+        column-count: 2;
+    }
+
+}
+ */
+@media screen and (min-width: 901px) {
+  #songblock:not(.toc) {
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #songblock:not(.toc) > div {
+    /*         border: solid red 1px; */
+    flex: 1 1 auto;
+  }
+}
