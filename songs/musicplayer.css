@@ -16,10 +16,11 @@ body {
   padding: 16px;
   width: 300px;
   border-radius: 8px;
-  background-color: #e1e6ec;
-  box-shadow: 5px 5px 11px #a2b1c6, -5px -5px 11px #fff;
+  background-color: #b2b3ae;
+  box-shadow: 5px 5px 11px #1c1c1d, -5px -5px 11px #ffffff;
   text-align: center;
   font-family: "Big Shoulders Stencil Text", cursive;
+  height: 60%;
 }
 
 .container img {
