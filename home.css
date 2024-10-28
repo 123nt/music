@@ -110,344 +110,158 @@ blockquote {
   border-radius: 5px;
   overflow: hidden;
 }
- .scrolltext {
+.scrolltext {
+  /* -moz-transform: translateX(100%);*/
+  /*  -webkit-transform: translateX(100%);*/
+  /*  transform: translateX(100%);*/
+  /*  -moz-animation: my-animation 15s linear infinite;*/
+  /*  -webkit-animation: my-animation 15s linear infinite;*/
+  /*  animation: my-animation 15s linear infinite;*/
+  /*}*/
 
-/* -moz-transform: translateX(100%);*/
-/*  -webkit-transform: translateX(100%);*/
-/*  transform: translateX(100%);*/
-/*  -moz-animation: my-animation 15s linear infinite;*/
-/*  -webkit-animation: my-animation 15s linear infinite;*/
-/*  animation: my-animation 15s linear infinite;*/
-/*}*/
-
-.stilltext {
-  font-size: 14px;
-  font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-}
-
-.shrinecontainer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* border: 1px dotted #827F7F; */
-  border-radius: 20px;
-}
-
-.shrinecontainer a {
-  background-color: #00000000;
-}
-
-.shrinetextcontainer {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #ccc7c7;
-}
-
-.occontainer {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #ccc7c7;
-}
-
-.occontainer img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.occontainerflex {
-  display: inline-flex;
-}
-
-.neopetscontainer {
-  display: inline;
-}
-
-.neopetscontainer img {
-  max-width: 100%;
-}
-
-.shrineimg:hover {
-  rotate: 5deg;
-}
-
-.shrinecontainer ul {
-  text-align: left;
-}
-
-@-moz-keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
+  .stilltext {
+    font-size: 14px;
+    font-family: ms ui gothic, Helvetica, Arial, sans-serif;
   }
 
-  to {
-    -moz-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes scroll-left {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+  .shrinecontainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 1px dotted #827F7F; */
+    border-radius: 20px;
   }
 
-  100% {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+  .shrinecontainer a {
+    background-color: #00000000;
   }
-}
 
-.resourcescontainer {
-  display: inline-grid;
-  width: 300px;
-  margin-bottom: 10px;
-}
+  .shrinetextcontainer {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ccc7c7;
+  }
 
-.resourcescontainer a {
-  background-color: #e8e2cc9d;
-  border-radius: 10px;
-  padding: 8px;
-  margin: 5px;
-}
+  .occontainer {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ccc7c7;
+  }
 
-.resourcescontainer a:hover {
-  background-color: #e8e2cc;
-}
+  .occontainer img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-.artpreviewbg {
-  background-color: transparent;
-}
+  .occontainerflex {
+    display: inline-flex;
+  }
 
-/* GENERAL FONT */
-a {
-  font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-  letter-spacing: 0.5px;
-  color: #955f5f;
-  background-color: #e8e2cc90;
-}
+  .neopetscontainer {
+    display: inline;
+  }
 
-.explorelist a {
-  background-color: #ffffff00;
-}
+  .neopetscontainer img {
+    max-width: 100%;
+  }
 
-.explorelist a:hover {
-  background-color: #e8e2cc90;
-}
+  .shrineimg:hover {
+    rotate: 5deg;
+  }
 
-a:hover {
-  color: #2c2626;
-}
+  .shrinecontainer ul {
+    text-align: left;
+  }
 
-h1,
-h2,
-h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #2c2626;
-}
+  @-moz-keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+    }
 
-p,
-ul {
-  font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  letter-spacing: 0.25px;
-  color: #2c2626;
-}
+    to {
+      -moz-transform: translateX(-100%);
+    }
+  }
 
-.changelogtext p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  @-webkit-keyframes scroll-left {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
 
-.changelogtext ul {
-  padding-left: 30px;
-  margin-top: 0;
-}
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
 
-.changelogtext li::marker {
-  content: "â†³ ";
-  font-size: 20px;
-}
+  @keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
 
-.changelogtitle h2::after {
-  content: url("https://web.archive.org/web/20020328192317/http://geocities.com:80/rinkn_jp/kaomoji/memo.gif");
-  padding-left: 2px;
-}
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
 
-.explorelist {
-  font-size: 20px;
-  padding-bottom: 10px;
-}
+  .resourcescontainer {
+    display: inline-grid;
+    width: 300px;
+    margin-bottom: 10px;
+  }
 
-/* SPECIALIZED FONT */
+  .resourcescontainer a {
+    background-color: #e8e2cc9d;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+  }
 
-.diarydate {
-  background-color: #ccc7c78a;
-  width: 75%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .resourcescontainer a:hover {
+    background-color: #e8e2cc;
+  }
 
-.paragraph p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+  .artpreviewbg {
+    background-color: transparent;
+  }
 
-.aboutcontainer p {
-  margin-top: 17px;
-  margin-bottom: 17px;
-}
+  /* GENERAL FONT */
+  a {
+    font-family: ms ui gothic, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    color: #955f5f;
+    background-color: #e8e2cc90;
+  }
 
-iframe h1,
-h2,
-h3 {
-  font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
+  .explorelist a {
+    background-color: #ffffff00;
+  }
 
-.footerbar p {
-  font-size: 15px;
-  color: #604242;
-}
+  .explorelist a:hover {
+    background-color: #e8e2cc90;
+  }
 
-.counter a {
-  background-color: transparent;
-}
+  a:hover {
+    color: #2c2626;
+  }
 
-.changelogtext ul {
-  font-size: 17px;
-}
-
-/* GENERAL PAGE LAYOUT */
-.content {
-  max-width: 450px;
-  margin: auto;
-}
-
-.explorecontent {
-  max-width: 600px;
-  margin: auto;
-}
-
-.main {
-  /* border: dotted 1px #262020; */
-  font-size: 16px;
-  padding: 0px 10px;
-}
-
-.exploremain {
-  border: dotted 1px #262020;
-  font-size: 16px;
-  padding: 0px 10px;
-  max-width: 175px;
-  margin: auto;
-  box-shadow: 10px 10px 0px #ccc7c7;
-}
-
-.diarymain {
-  border: dotted 1px #262020;
-  font-size: 16px;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 10px 10px 0px #ccc7c7;
-  height: 520px;
-}
-
-.diaryscrollbox {
-  height: 83%;
-  overflow: auto;
-  border-top: solid 1px #ccc7c780;
-  border-bottom: solid 1px #ccc7c780;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.header {
-  padding-top: 50px;
-}
-
-.changelog {
-  border: solid 1px #ccc7c7;
-  border-radius: 10px;
-  width: 85%;
-}
-
-.artcontainer {
-  margin-bottom: 10px;
-}
-
-.footer {
-  padding: 20px;
-}
-
-.footerbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 15px;
-  padding: 5px;
-  background-color: #e8e2cc71;
-  /* background-color: #e8e2cc; */
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 15px;
-}
-
-/* IMAGES */
-.banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.artpreview {
-  max-width: 100%;
-  width: 85px;
-  height: auto;
-  border: solid 3px transparent;
-}
-
-.artpreview:hover {
-  border-color: #a79391;
-}
-
-/* RESPONSIVE STYLING */
-
-.mobileshow {
-  display: none;
-}
-
-@media screen and (max-width: 561px) {
   h1,
   h2,
   h3 {
-    font-size: 100%;
     font-family: Helvetica, Arial, sans-serif;
     color: #2c2626;
   }
@@ -455,78 +269,264 @@ h3 {
   p,
   ul {
     font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 0.25px;
     color: #2c2626;
   }
 
+  .changelogtext p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .changelogtext ul {
+    padding-left: 30px;
+    margin-top: 0;
+  }
+
+  .changelogtext li::marker {
+    content: "â†³ ";
+    font-size: 20px;
+  }
+
+  .changelogtitle h2::after {
+    content: url("https://web.archive.org/web/20020328192317/http://geocities.com:80/rinkn_jp/kaomoji/memo.gif");
+    padding-left: 2px;
+  }
+
+  .explorelist {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  /* SPECIALIZED FONT */
+
+  .diarydate {
+    background-color: #ccc7c78a;
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragraph p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .aboutcontainer p {
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+
+  iframe h1,
+  h2,
+  h3 {
+    font-family: ms ui gothic, Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
   .footerbar p {
-    font-size: 13px;
+    font-size: 15px;
     color: #604242;
   }
 
-  .mobilehide {
-    display: none;
+  .counter a {
+    background-color: transparent;
   }
 
-  .mobileshow {
-    display: initial;
+  .changelogtext ul {
+    font-size: 17px;
   }
 
-  .header {
-    padding-top: 5px;
-  }
-
-  .mp3textplayercontainer {
-    max-width: 100%;
-  }
-
-  .stilltext {
-    font-size: 14px;
-    font-family: ms ui gothic, Helvetica, Arial, sans-serif;
-  }
-
+  /* GENERAL PAGE LAYOUT */
   .content {
-    max-height: 500px;
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .explorecontent {
+    max-width: 600px;
+    margin: auto;
   }
 
   .main {
-    height: 360px;
-    overflow: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-  }
-
-  .aboutmain {
-    overflow: auto;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* border: dotted 1px #262020; */
+    font-size: 16px;
+    padding: 0px 10px;
   }
 
   .exploremain {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+    border: dotted 1px #262020;
+    font-size: 16px;
+    padding: 0px 10px;
+    max-width: 175px;
+    margin: auto;
+    box-shadow: 10px 10px 0px #ccc7c7;
   }
 
   .diarymain {
-    height: 345px;
+    border: dotted 1px #262020;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 0px #ccc7c7;
+    height: 520px;
   }
 
   .diaryscrollbox {
-    height: 80%;
+    height: 83%;
+    overflow: auto;
+    border-top: solid 1px #ccc7c780;
+    border-bottom: solid 1px #ccc7c780;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-}
-@media screen and (max-width: 561px) {
-  .body {
-    margin-top: 5%;
-    width: 420px;
-    height: 360px;
-    font-size: 20px;
+
+  .header {
+    padding-top: 50px;
   }
-  img {
-    width: 100%;
+
+  .changelog {
+    border: solid 1px #ccc7c7;
+    border-radius: 10px;
+    width: 85%;
+  }
+
+  .artcontainer {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footerbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #e8e2cc71;
+    /* background-color: #e8e2cc; */
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15px;
+  }
+
+  /* IMAGES */
+  .banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .artpreview {
+    max-width: 100%;
+    width: 85px;
     height: auto;
+    border: solid 3px transparent;
+  }
+
+  .artpreview:hover {
+    border-color: #a79391;
+  }
+
+  /* RESPONSIVE STYLING */
+
+  .mobileshow {
+    display: none;
+  }
+
+  @media screen and (max-width: 561px) {
+    h1,
+    h2,
+    h3 {
+      font-size: 100%;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #2c2626;
+    }
+
+    p,
+    ul {
+      font-family: ms ui gothic, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      color: #2c2626;
+    }
+
+    .footerbar p {
+      font-size: 13px;
+      color: #604242;
+    }
+
+    .mobilehide {
+      display: none;
+    }
+
+    .mobileshow {
+      display: initial;
+    }
+
+    .header {
+      padding-top: 5px;
+    }
+
+    .mp3textplayercontainer {
+      max-width: 100%;
+    }
+
+    .stilltext {
+      font-size: 14px;
+      font-family: ms ui gothic, Helvetica, Arial, sans-serif;
+    }
+
+    .content {
+      max-height: 500px;
+    }
+
+    .main {
+      height: 360px;
+      overflow: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 20px;
+    }
+
+    .aboutmain {
+      overflow: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .exploremain {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+
+    .diarymain {
+      height: 345px;
+    }
+
+    .diaryscrollbox {
+      height: 80%;
+    }
+  }
+  @media screen and (max-width: 561px) {
+    .body {
+      margin-top: 5%;
+      width: 420px;
+      height: 360px;
+      font-size: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

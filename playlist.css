@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Georgia", serif;
+  background-color: #f9f3e9;
+  color: #4a4a4a;
+  background-image: url("https://www.transparenttextures.com/patterns/paper.png"); /* Optional texture */
+}
+
+/* Header styling */
+header {
+  background-color: #8b5a2b;
+  color: #f0e68c;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 5px solid #f0e68c;
+}
+
+/* Main content styling */
+main {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  padding: 20px;
+  justify-content: center; /* Center the content */
+  scroll-snap-type: x mandatory; /* Enable snap scrolling */
+}
+
+.music-card {
+  scroll-snap-align: start; /* Snap to each card */
+}
+
+/* Music card styling */
+.music-card {
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency for aesthetic */
+  border: 2px solid #8b5a2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 5px; /* Reduced margin for spacing */
+  padding: 10px; /* Reduced padding for smaller cards */
+  text-align: center;
+  width: 180px; /* Default width for larger screens */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* Image styling */
+.music-card img {
+  width: 100%; /* Make images responsive */
+  max-width: 120px; /* Set a maximum width for images */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Title and artist styling */
+.music-card h2 {
+  font-size: 1.1em; /* Smaller font size for titles */
+  margin: 5px 0; /* Reduced margin */
+  color: #6f4c3e;
+}
+
+.music-card p {
+  font-style: italic;
+  color: #8b5a2b;
+  font-size: 0.8em; /* Smaller font size for artist names */
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .music-card {
+    width: 70%; /* 70% width for mobile */
+  }
+}
+
+@media (min-width: 901px) {
+  .music-card {
+    width: 20%; /* Five cards per row on larger screens */
+  }
+}
+
+/* For 6 cards on mobile */
+@media (max-width: 600px) {
+  .music-card {
+    width: 28%; /* 6 cards in a row */
+  }
+}
