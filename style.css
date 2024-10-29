@@ -1,0 +1,24 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex; /* Use flexbox for layout */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px; /* Add some padding around the container */
+  gap: 10px; /* Space between the divs */
+}
+
+.box {
+  min-width: 100px; /* Minimum width for each box */
+  height: 100px; /* Fixed height for the boxes */
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  display: flex; /* Center text horizontally and vertically */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  border-radius: 5px; /* Rounded corners */
+}
