@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Audio Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Simple Audio Player</h1>
+      </header>
+      <main>
+        <div class="song-list">
+          <ul id="songList">
+            <li>
+              <span class="song-name">Song 1</span>
+              <button onclick="selectSong(0)">Play</button>
+            </li>
+            <li>
+              <span class="song-name">Song 2</span>
+              <button onclick="selectSong(1)">Play</button>
+            </li>
+            <li>
+              <span class="song-name">Song 3</span>
+              <button onclick="selectSong(2)">Play</button>
+            </li>
+          </ul>
+        </div>
+        <audio id="audioPlayer" controls></audio>
+      </main>
+    </div>
+    <script>
+      const songs = [
+        {
+          title: "Song 1",
+          src: "/audio/sajjan/Sajjan Raj Vaidya - 9841 [Official Release] - Sajjan (youtube).mp3", // Replace with your audio file path
+        },
+        {
+          title: "Song 2",
+          src: "path/to/song2.mp3", // Replace with your audio file path
+        },
+        {
+          title: "Song 3",
+          src: "path/to/song3.mp3", // Replace with your audio file path
+        },
+      ];
+
+      let currentSongIndex = -1;
+      const audioPlayer = document.getElementById("audioPlayer");
+
+      function selectSong(index) {
+        if (currentSongIndex === index && !audioPlayer.paused) {
+          audioPlayer.pause();
+        } else {
+          currentSongIndex = index;
+          audioPlayer.src = songs[currentSongIndex].src;
+          audioPlayer.play().catch((error) => {
+            console.error("Error playing audio:", error);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
